@@ -1,7 +1,10 @@
-// Отрендери компонент UserList и передай в него массив USERS
-// - Пропиши типизацию для объектов User и Address
-// - Протипизируй пропсы для компонента UserList, избавься от any
-// - Отрендери данные в UserList
+/*
+ * Задание
+ * 1. Отрендери компонент UserList и передай в него массив USERS
+ * - Пропиши типизацию для объектов User и Address
+ * - Протипизируй пропсы для компонента UserList, избавься от any
+ * - Отрендери данные в UserList: там должны отображаться имя, возраст и адрес пользователя
+ * */
 
 const USERS: any[] = [
   { id: 1, name: 'John', age: 25, address: { street: '123 Main St', city: 'New York' } },
@@ -32,7 +35,7 @@ type Address = {
 export const Homework1 = () => {
   return (
     <section id={'hw01'}>
-      <h2>homework 1</h2>
+      <h3>Homework 1</h3>
       {/* render UserList component */}
     </section>
   )
