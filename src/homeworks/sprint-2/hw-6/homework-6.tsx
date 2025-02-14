@@ -37,7 +37,7 @@ export const Homework6 = () => {
 
   return (
     <section id={'hw6'}>
-      <h3>Homework 6</h3>
+      <h3>Homework 6 - Домашняя библиотека</h3>
       <Filters filter={filter} setFilter={setFilter} />
       <BookList
         books={filteredBooks} // Передайте необходимые данные

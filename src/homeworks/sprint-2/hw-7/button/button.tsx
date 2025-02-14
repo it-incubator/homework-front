@@ -10,6 +10,6 @@ export type ButtonProps = {
 } & ComponentProps<'button'>
 
 // 📝 Завершите реализацию компонента Button согласно заданию
-export const Button = (props: ButtonProps) => {
+export const Button = ({ fullWidth, ...props }: ButtonProps) => {
   return <button {...props} />
 }

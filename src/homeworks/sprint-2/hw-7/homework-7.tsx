@@ -28,7 +28,7 @@ import { Card } from './card/card.tsx'
 export const Homework7 = () => {
   return (
     <section id={'hw7'}>
-      <h3>7. Универсальные компоненты</h3>
+      <h3>Homework 7 - Универсальные компоненты</h3>
       <Card className={s.box}>
         <TextField className={s.textField} label="Имя вашего котика 🐈" />
         <TextField className={s.textField} label="Обязательное поле" errorMessage="Заполните поле ❌" />
