@@ -9,13 +9,13 @@ export function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="container">
+      <main className="container">
         <Routes>
           <Route path="/" element={<Sprint1 />} />
           <Route path="sprint-2" element={<Sprint2 />} />
           <Route path="sprint-3" element={<Sprint3 />} />
         </Routes>
-      </div>
+      </main>
     </BrowserRouter>
   )
 }
