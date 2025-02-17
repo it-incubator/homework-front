@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router'
 import s from './header.module.css'
 import { Logo } from '../../assets/logo.tsx'
 import { clsx } from 'clsx'
+import { ThemeSwitcher } from '@/widgets/theme-switcher/ThemeSwitcher.tsx'
 
 const NAV_LINKS = [
   { to: '/', label: 'Sprint 1', id: 'nav-link-sprint-1' },
@@ -28,6 +29,10 @@ export const Header = () => {
             ))}
           </ul>
         </nav>
+
+        <div className={s.themeSwitcherBox}>
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   )
