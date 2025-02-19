@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { to: '/', label: 'Sprint 1', id: 'nav-link-sprint-1' },
   { to: '/sprint-2', label: 'Sprint 2', id: 'nav-link-sprint-2' },
   { to: '/sprint-3', label: 'Sprint 3', id: 'nav-link-sprint-3' },
+  { to: '/sprint-4', label: 'Sprint 4', id: 'nav-link-sprint-4' },
 ]
 
 export const Header = () => {

@@ -14,7 +14,6 @@ export type ThemeMode = 'dark' | 'light' | 'system'
 
 const initialState = {
   themeMode: 'light' as ThemeMode,
-  isLogged: false,
 }
 
 export const appReducer = createReducer(initialState, (builder) => {})
