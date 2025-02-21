@@ -1,5 +1,3 @@
-import { Student, StudentFilterParams } from '@/homeworks/sprint-4/hw-13/students-fake-api.ts'
-
 const animeList: Anime[] = [
   { id: 1, title: 'Naruto', isFavorite: true },
   { id: 2, title: 'One Piece', isFavorite: false },
