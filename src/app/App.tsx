@@ -17,6 +17,7 @@ export function App() {
           <Route path="sprint-2" element={<Sprint2 />} />
           <Route path="sprint-3" element={<Sprint3 />} />
           <Route path="sprint-4" element={<Sprint4 />} />
+          {/* 📝 Homework-16: Добавьте ниже роут для страницы факультета. */}
         </Routes>
       </main>
       <Footer />
