@@ -1,7 +1,7 @@
-import { Homework1 } from './hw-1/homework-1.tsx'
-import { Homework2 } from './hw-2/homework-2.tsx'
-import { Homework3 } from './hw-3/homework-3.tsx'
-import { Homework4 } from './hw-4/homework-4.tsx'
+import { Homework1 } from './hw-1/Homework1'
+import { Homework2 } from './hw-2/Homework2'
+import { Homework3 } from './hw-3/Homework3'
+import { Homework4 } from './hw-4/Homework4'
 
 export const Sprint1 = () => {
   return (

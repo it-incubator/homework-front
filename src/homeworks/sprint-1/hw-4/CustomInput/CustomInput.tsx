@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react'
-import s from './custome-input.module.css'
+import s from './CustomInput.module.css'
 
 type CustomInputProps = ComponentProps<'input'> // Получаем все пропсы из стандартного компонента input
 
