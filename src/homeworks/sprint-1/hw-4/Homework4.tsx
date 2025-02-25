@@ -1,13 +1,14 @@
 import { ChangeEvent, useState } from 'react'
-import { CustomButton } from './custom-button/custom-button.tsx'
-import { CustomInput } from './custom-input/custom-input.tsx'
-import s from './homework-4.module.css'
+import { CustomButton } from '@/homeworks/sprint-1/hw-4/CustomButton/CustomButton.tsx'
+import { CustomInput } from '@/homeworks/sprint-1/hw-4/CustomInput/CustomInput.tsx'
+import s from 'src/homeworks/sprint-1/hw-4/Homework4.module.css'
 
 /*
- * Изучите реализацию компонентов CustomButton и CustomInput. Обратите внимание на типизацию пропсов
+ * 🧙‍♂️ Изучите реализацию компонентов CustomButton и CustomInput. Обратите внимание на типизацию пропсов
  * - мы сохраняем все стандартные пропсы для компонентов button и input, только добавляем свои стили.
+ * Для извлечения стандартных пропсов мы используем type helper из react - ComponentProps
  *
- * Задание:
+ * 📝 Задание:
  * 1. Почините компонент Homework4, чтобы он работал без ошибок
  * - Добавьте типизацию там, где это необходимо
  * 2. Для всех элементов списка с нечётными индексами добавьте класс s.odd (у них должен появиться фоновый цвет)
@@ -31,10 +32,10 @@ export const Homework4 = () => {
       <h3>Homework 4</h3>
       {currentText ? <p id={'hw04-text'}>{currentText}</p> : <p id={'hw04-default-text'}>Здесь появится новое дело</p>}
 
-      {/* добавьте необходимые пропсы */}
+      {/* 📝 добавьте необходимые пропсы */}
       <CustomInput id={'hw04-input'} />
 
-      {/* добавьте необходимые пропсы */}
+      {/* 📝 добавьте необходимые пропсы */}
       <CustomButton id={'hw04-button'}>Сохранить</CustomButton>
 
       <h4>Список дел на день:</h4>
@@ -43,7 +44,7 @@ export const Homework4 = () => {
           return (
             <li
               key={index}
-              id={`hw04-task-${index}`} /* для всех элементов с нечётными индексами добавьте класс s.odd */
+              id={`hw04-task-${index}`} /* 📝 для всех элементов с нечётными индексами добавьте класс s.odd */
             >
               {' '}
               {el}

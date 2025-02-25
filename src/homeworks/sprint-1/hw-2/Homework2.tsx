@@ -1,9 +1,9 @@
-import { UserList } from './user-list.tsx'
+import { UserList } from 'src/homeworks/sprint-1/hw-2/UserList.tsx'
 import { useState } from 'react'
 
 /*
- * Задание
- * 1. Отрендерить список пользователей. В этот раз используй компонент UserItem
+ * 📝 Задание
+ * 1. Отрендерить список пользователей. В этот раз используйте компонент UserItem
  * 2. Реализовать фильтрацию пользователей. При нажатии на кнопку "Show me only users from Los Angeles 🌴",
  * должны отобразиться только пользователи из Лос-Анджелеса
  * 3. Добавить типизация там, где это необходимо (удалить все any)
@@ -30,14 +30,14 @@ const USERS: User[] = [
   { id: 10, name: 'Emily', age: 55, address: { street: '765 Aspen Blvd', city: 'Los Angeles' } },
 ]
 
-export type User = {
+type User = {
   id: number
   name: string
   age: number
   address: Address
 }
 
-export type Address = {
+type Address = {
   street: string
   city: string
 }
@@ -46,7 +46,7 @@ export const Homework2 = () => {
   const [users, setUsers] = useState(USERS)
 
   const filterLosAngelesUsers = () => {
-    // Add filtration logic here
+    // 📝 Add filtration logic here
     // Only users from Los Angeles should be displayed
     // 🧙‍♂️ Hint: use the setUsers to update the list of users
   }

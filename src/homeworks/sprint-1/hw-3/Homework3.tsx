@@ -2,9 +2,9 @@ import { ChangeEvent, useState } from 'react'
 
 /*
  * Перед вами приложение для ведения списка дел. Но его нужно дописать.
- * Задание:
+ * 📝 Задание:
  * - Добавить типизацию, где необходимо
- * - Реализовать функционал добавления нового дела
+ * - Реализовать функционал добавления нового дела в конец списка
  *
  * Дополнительное задание:
  * - Если в инпуте нет текста, кнопка "Сохранить" должна быть задизейблена
@@ -15,12 +15,12 @@ export const Homework3 = () => {
   const [texts, setTexts] = useState<string[]>(['Прочитать раздел документации React "Describing the UI" на react.dev'])
 
   const handleChange = () => {
-    // add logic here
+    // 📝 add logic here
   }
 
   const handleSave = () => {
-    // add new task to the texts
-    // and clear the currentText
+    // 📝 add new task to the texts
+    // 📝 and clear the currentText
   }
 
   return (
@@ -32,7 +32,7 @@ export const Homework3 = () => {
         <p id={'hw03-default-text'}>Здесь появится новое дело</p> // nothing to change here
       )}
       <input id={'hw03-input'} type="text" value={currentText} onChange={handleChange} />
-      <button id={'hw03-button'}>Сохранить</button> {/* add onClick */}
+      <button id={'hw03-button'}>Сохранить</button>
       <h4>Список дел на день:</h4>
       <ol id={'hw03-tasks'}>
         {texts.map((el, index) => {
