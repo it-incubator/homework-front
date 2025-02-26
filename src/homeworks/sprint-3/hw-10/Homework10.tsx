@@ -36,13 +36,13 @@ const initialData: Person[] = [
 
 export const Homework10 = () => {
   const [sortDirection, setSortDirection] = useState<SortDirection | null>(null)
-  const [filterAdults, setFilterAdults] = useState(false)
+  const [isFilteringAdults, setIsFilterAdults] = useState(false)
 
   const handleSort = () => {
     // 📝 Завершите реализацию
   }
 
-  const handleFilter = () => {
+  const handleAdultsFilter = () => {
     // 📝 Завершите реализацию
   }
 
@@ -58,8 +58,8 @@ export const Homework10 = () => {
         <input
           id="hw-10-filter-checkbox"
           type="checkbox"
-          checked={filterAdults}
-          onChange={handleFilter}
+          checked={isFilteringAdults}
+          onChange={handleAdultsFilter}
           className={s.checkbox}
         />
         Показать только 18+

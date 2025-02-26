@@ -28,7 +28,7 @@ export const NewHabitForm = () => {
         onChange={handleChange}
         name="title"
       />
-      <Button type="submit" disabled={isEmpty}>
+      <Button type="submit" disabled={isEmpty} id="hw9-add-habit-button">
         Добавить
       </Button>
     </form>

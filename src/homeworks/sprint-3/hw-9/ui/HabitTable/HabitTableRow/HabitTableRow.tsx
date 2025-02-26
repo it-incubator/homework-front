@@ -8,6 +8,7 @@ type HabitTableRowProps = {
   habit: Habit
 }
 
+// 📝 Закончите реализацию удаления привычки
 export const HabitTableRow = ({ habit }: HabitTableRowProps) => {
   const dispatch = useDispatch()
   const [isEditing, setIsEditing] = useState(false)
@@ -33,7 +34,7 @@ export const HabitTableRow = ({ habit }: HabitTableRowProps) => {
   const isAllDaysDone = habit.days.every((day) => day)
 
   return (
-    <tr className={clsx(isAllDaysDone && s.done)}>
+    <tr className={clsx(isAllDaysDone && s.done)} id={`hw9-habit-row-${habit.id}`}>
       <td>
         {isEditing ? (
           <input
@@ -58,7 +59,7 @@ export const HabitTableRow = ({ habit }: HabitTableRowProps) => {
         </td>
       ))}
       <td>
-        <button id="hw-9-delete-button">Удалить</button>
+        <button id={`hw9-delete-habit-button-${habit.id}`}>Удалить</button>
       </td>
     </tr>
   )

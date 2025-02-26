@@ -10,6 +10,17 @@ import s from './ThemeSwitcher.module.css'
 
 export const THEME_KEY = 'themeMode' // ключ в LocalStorage
 
+// устанавливает на html-элемент атрибут data-theme с выбранной темой
+const applyTheme = (theme: ThemeMode) => {
+  if (theme === 'system') {
+    // проверяем, предпочитает ли пользователь тёмную тему в настройках своей операционной системы или браузера
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light')
+  } else {
+    document.documentElement.setAttribute('data-theme', theme)
+  }
+}
+
 export const ThemeSwitcher = () => {
   const dispatch = useDispatch()
   const themeMode = 'light' // 📝 1. Получи текущую тему из Redux
@@ -20,10 +31,11 @@ export const ThemeSwitcher = () => {
   }
 
   // 🧙‍♂️ При монтировании компонента проверяем сохраненную тему в localStorage
-  // и если она есть, то отправляем ее в redux state
+  // и если она есть, то используем её и отправляем ее в redux state
   useEffect(() => {
     const savedTheme = localStorage.getItem(THEME_KEY) as ThemeMode | null
     if (savedTheme) {
+      applyTheme(savedTheme)
       // 📝 3. Отправьте сохранённую тему в redux state
     }
   }, [dispatch])
@@ -33,14 +45,7 @@ export const ThemeSwitcher = () => {
   useEffect(() => {
     if (themeMode) {
       localStorage.setItem(THEME_KEY, themeMode)
-      // @ts-expect-error - после выполнения задания можно удалить!
-      if (themeMode === 'system') {
-        // проверяем, предпочитает ли пользователь тёмную тему в настройках своей операционной системы или браузера
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light')
-      } else {
-        document.documentElement.setAttribute('data-theme', themeMode)
-      }
+      applyTheme(themeMode)
     }
   }, [themeMode])
 
