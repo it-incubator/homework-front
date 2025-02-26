@@ -1,6 +1,6 @@
-import { TextField } from '../../../../sprint-2/hw-7/text-field/text-field.tsx'
+import { TextField } from '@/homeworks/sprint-2/hw-7/TextField/TextField.tsx'
 import { FormEvent, useState } from 'react'
-import { Button } from '../../../../sprint-2/hw-7/button/button.tsx'
+import { Button } from '@/homeworks/sprint-2/hw-7/Button/Button.tsx'
 import s from './NewHabitForm.module.css'
 
 // 📝 Закончите логику добавления привычки

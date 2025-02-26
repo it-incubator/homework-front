@@ -5,10 +5,10 @@ import s from './order-table.module.css'
 
 export const OrderTable = ({
   orders,
-  handleUpdateOrderStatus,
+  updateOrderStatus,
 }: {
   orders: Order[]
-  handleUpdateOrderStatus: (id: string) => void
+  updateOrderStatus: (id: string) => void
 }) => {
   return (
     <table id="hw8-order-table" className={s.ordersTable}>
@@ -32,7 +32,7 @@ export const OrderTable = ({
               {order.status !== 'completed' && (
                 <button
                   id={`hw8-update-order-button-${order.id}`}
-                  onClick={() => handleUpdateOrderStatus(order.id)}
+                  onClick={() => updateOrderStatus(order.id)}
                   className={s.buttonUpdate}>
                   {order.status === 'pending' ? 'Начать приготовление' : 'Завершить заказ'}
                 </button>

@@ -2,7 +2,7 @@ import { ComponentProps, ReactNode, useId } from 'react'
 
 import { clsx } from 'clsx'
 
-import s from './text-field.module.css'
+import s from './TextField.module.css'
 
 export type TextFieldProps = {
   errorMessage?: string

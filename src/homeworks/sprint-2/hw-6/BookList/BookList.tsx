@@ -1,7 +1,8 @@
-import { Book, Genre } from '../homework-6.tsx'
-import s from './book-list.module.css'
+import { Book, Genre } from '../Homework6.tsx'
+import s from './BookList.module.css'
 import { getGenreEmoji } from '../utils/get-genre-emoji.ts'
 
+// 📝 Замените any
 type BookListProps = {
   books: any
   handleDeleteBook: any
@@ -17,7 +18,7 @@ export const BookList = (props: BookListProps) => {
           <button
             id={`hw6-delete-button-${book.id}`}
             aria-label={`Delete book`}
-            // добавьте обработчик события
+            // 📝 добавьте обработчик события
           >
             ✖
           </button>

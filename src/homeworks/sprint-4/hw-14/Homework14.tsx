@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react'
 import s from './Homework14.module.css'
 import { AnimeCard } from '@/homeworks/sprint-4/hw-14/AnimeCard/AnimeCard.tsx'
-import { TextField } from '@/homeworks/sprint-2/hw-7/text-field/text-field.tsx'
+import { TextField } from '@/homeworks/sprint-2/hw-7/TextField/TextField.tsx'
 import { Anime, animeApi } from '@/homeworks/sprint-4/hw-14/anime-fake-api.ts'
 
 /*

@@ -2,7 +2,7 @@ import { Student, studentsApi } from './students-fake-api.ts'
 import styles from './Homework13.module.css'
 import DatePicker, { registerLocale } from 'react-datepicker'
 import { ru } from 'date-fns/locale/ru'
-import { TextField } from '@/homeworks/sprint-2/hw-7/text-field/text-field.tsx'
+import { TextField } from '@/homeworks/sprint-2/hw-7/TextField/TextField.tsx'
 import { StudentsTable } from './StudentsTable/StudentsTable.tsx'
 
 /*

@@ -1,6 +1,6 @@
 import s from './Homework12.module.css'
 import { useState } from 'react'
-import { Button } from '@/homeworks/sprint-2/hw-7/button/button.tsx'
+import { Button } from '@/homeworks/sprint-2/hw-7/Button/Button.tsx'
 
 /* 📝
  * В данном задании необходимо реализовать часы, которые отображают текущее время при нажатии на кнопку start.

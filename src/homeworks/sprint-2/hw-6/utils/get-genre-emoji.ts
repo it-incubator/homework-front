@@ -1,4 +1,4 @@
-import { Genre } from '../homework-6.tsx'
+import { Genre } from '../Homework6.tsx'
 
 export const getGenreEmoji = (genre: Genre) => {
   switch (genre) {

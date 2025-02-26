@@ -64,7 +64,7 @@ export const Homework8 = () => {
             Заказов нет
           </p>
         ) : (
-          <OrderTable orders={state.orders} handleUpdateOrderStatus={handleUpdateOrderStatus} />
+          <OrderTable orders={state.orders} updateOrderStatus={handleUpdateOrderStatus} />
         )}
 
         {state.orders.length > 0 && (

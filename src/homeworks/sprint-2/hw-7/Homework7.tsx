@@ -1,7 +1,7 @@
-import { TextField } from './text-field/text-field.tsx'
-import { Button } from './button/button.tsx'
-import s from './homework-7.module.css'
-import { Card } from './card/card.tsx'
+import { TextField } from './TextField/TextField.tsx'
+import { Button } from './Button/Button.tsx'
+import s from './Homework7.module.css'
+import { Card } from './Card/Card.tsx'
 
 /*
  * В этом задании мы вернёмся к работе с универсальными компонентами
@@ -16,8 +16,8 @@ import { Card } from './card/card.tsx'
  *
  * 3. 📝 Ваша задача доработать компонент Button так, чтобы к нему применялись соответствующие CSS-классы
  * в зависимости от значения пропсов variant и fullWidth
- * - у всех кнопок есть общий класс .button
- * - у кнопок с variant primary или без variant, есть класс .primary
+ * - у всех кнопок должен быть общий класс .button
+ * - у кнопок с variant primary или без variant, есть класс .primary (primary - вариант по умолчанию)
  * - у кнопок с variant secondary, есть класс .secondary
  * - у кнопок с fullWidth = true, есть класс .fullWidth
  * - кнопки могут принимать className из пропсов и добавлять его к другим классам
@@ -30,8 +30,8 @@ export const Homework7 = () => {
     <section id={'hw7'}>
       <h3>Homework 7 - Универсальные компоненты</h3>
       <Card className={s.box}>
-        <TextField className={s.textField} label="Имя вашего котика 🐈" />
-        <TextField className={s.textField} label="Обязательное поле" errorMessage="Заполните поле ❌" />
+        <TextField className={s.textField} label="Обычное текстовое поле" />
+        <TextField className={s.textField} label="Поле с ошибкой" errorMessage="Заполните поле ❌" />
       </Card>
 
       <Card className={s.box} headerContent={<h3 className={s.cardTitle}>Демонстрация кнопок</h3>}>

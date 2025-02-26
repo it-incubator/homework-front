@@ -5,7 +5,7 @@ import success200 from './images/200.svg'
 import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
-import { Button } from '@/homeworks/sprint-2/hw-7/button/button.tsx'
+import { Button } from '@/homeworks/sprint-2/hw-7/Button/Button.tsx'
 
 /*
  * Данные кнопки отправляют запросы на сервер, что приводит к различным ответам. Мы должны отобразить результат.

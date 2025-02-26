@@ -1,7 +1,8 @@
-import s from './filters.module.css'
-import { Genre } from '../homework-6.tsx'
+import s from './Filters.module.css'
+import { Genre } from '../Homework6.tsx'
 import { getGenreEmoji } from '../utils/get-genre-emoji.ts'
 
+// 📝 Замените any
 type FiltersProps = {
   filter: any
   setFilter: any
@@ -21,7 +22,7 @@ export const Filters = (props: FiltersProps) => {
         <li key={label} className={props.filter === value ? s.active : ''}>
           <button
             id={`hw6-filter-${value || 'all'}`}
-            // добавьте обработчик события
+            //  📝 добавьте обработчик события
           >
             {label}
           </button>

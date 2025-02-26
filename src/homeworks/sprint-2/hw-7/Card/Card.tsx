@@ -1,6 +1,6 @@
 import { ComponentProps, ReactNode } from 'react'
 import { clsx } from 'clsx'
-import s from './card.module.css'
+import s from './Card.module.css'
 
 type CardProps = {
   headerContent?: ReactNode

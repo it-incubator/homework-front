@@ -1,6 +1,6 @@
 import { ComponentProps } from 'react'
 
-import s from './button.module.css'
+import s from './Button.module.css'
 
 export type ButtonVariant = 'primary' | 'secondary'
 
