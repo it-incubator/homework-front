@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import s from './MessageSender.module.css'
-import { MESSAGE_0 } from '../homework-5.tsx'
+import { MESSAGE_0 } from '../Homework5.tsx'
 
-// компонент, который тестирует ваши компоненты (не изменять, any не трогать)
+// MessageSender тестирует ваши компоненты (не изменять, any не трогать)
 const MessageSender = (props: any) => {
   const M = props.M
   const textareaRef = useRef<HTMLTextAreaElement | null>(null)

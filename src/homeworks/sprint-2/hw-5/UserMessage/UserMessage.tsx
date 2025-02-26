@@ -1,15 +1,20 @@
 import React from 'react'
 import s from './UserMessage.module.css'
 
-// нужно создать правильный тип вместо any
+// 📝 создать правильный тип вместо any
 export type UserMessageProps = any
 
-// нужно отобразить приходящие данные
+// 📝 отобразить приходящие данные
 export const UserMessage = (props: UserMessageProps) => {
   return (
     <div id={'hw5-message-' + props.message.id} className={s.message}>
       <div className={s.imageAndText}>
-        <img id={'hw5-avatar-' + props.message.id} src={props.message.user.avatar} alt={props.message.user.name} />
+        <img
+          width="200"
+          id={'hw5-avatar-' + props.message.id}
+          src={props.message.user.avatar}
+          alt={props.message.user.name}
+        />
         <div className={s.text}>
           <div id={'hw5-name-' + props.message.id} className={s.name}>
             {/*создаёт студент*/}

@@ -1,4 +1,4 @@
-import { Homework5 } from './hw-5/homework-5.tsx'
+import { Homework5 } from './hw-5/Homework5.tsx'
 import { Homework6 } from './hw-6/homework-6.tsx'
 import { Homework7 } from './hw-7/homework-7.tsx'
 import { Homework8 } from './hw-8/homework-8.tsx'
