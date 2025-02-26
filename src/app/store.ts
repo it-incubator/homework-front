@@ -2,10 +2,12 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { appReducer, ThemeMode } from './app-reducer.ts'
 import { habitsReducer } from '@/homeworks/sprint-3/hw-9/model/habits-reducer.ts'
 import { THEME_KEY } from '@/widgets/theme-switcher/ThemeSwitcher.tsx'
+import { studentsSlice } from '@/homeworks/sprint-4/hw-13/model/students-slice.ts'
 
 const rootReducer = combineReducers({
   habits: habitsReducer,
   app: appReducer,
+  [studentsSlice.name]: studentsSlice.reducer,
 })
 
 export const store = configureStore({
