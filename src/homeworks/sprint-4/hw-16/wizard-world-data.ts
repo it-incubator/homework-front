@@ -14,7 +14,7 @@ export type Trait = {
   name: string
 }
 
-export type House = {
+export type HouseFullInfo = {
   id: string
   name: string
   houseColours: string
@@ -28,7 +28,7 @@ export type House = {
   traits: Trait[]
 }
 
-export const houses: House[] = [
+export const houses: HouseFullInfo[] = [
   {
     id: '0367baf3-1cb6-4baf-bede-48e17e1cd005',
     name: 'Gryffindor',

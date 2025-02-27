@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react'
-import { HouseViewModel, wizardFakeApi } from '@/homeworks/sprint-4/hw-16/wizard-world-fake-api.ts'
 import s from './Homework16.module.css'
 import { Link } from 'react-router'
+import { useSelector } from 'react-redux'
+import { fetchHousesTC, selectHouses } from './model/wizard-world-slice'
+import { useAppDispatch } from '@/shared/hooks/useAppDispatch.ts'
 
 /*
  * В этом задании мы будем работать с динамическими сегментами роутов.
  * У нас есть 4 карточки-ссылки. При перехоже по ссылке мы должны попасть на странице факультета (baseURL/sprint-4/house/someID).
  * Там должен отобразиться компонент HouseDetails (и больше ничего, кроме Header и Footer приложения).
  *
- * Ваша задача закончить реализацию роунтинга:
+ * Ваша задача закончить реализацию роутинга:
  * 1. Добавьте новый роут для страницы факультета в App.tsx
  * 2. Добавьте путь на страницу факультета в Link в Homework16.tsx
  * 3. Получите id факультета URL в HouseDetails.tsx и выведите информацию о факультете
@@ -18,15 +20,15 @@ import { Link } from 'react-router'
  * */
 
 export const Homework16 = () => {
-  const [houses, setHouses] = useState<HouseViewModel[]>([])
+  const houses = useSelector(selectHouses)
+  const dispatch = useAppDispatch()
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    wizardFakeApi.getHouses().then((data) => {
-      setHouses(data)
+    dispatch(fetchHousesTC()).finally(() => {
       setLoading(false)
     })
-  }, [])
+  }, [dispatch])
 
   if (loading) {
     return <div className={s.loading}>Загрузка... ⏳</div>
