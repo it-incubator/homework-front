@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { Student } from '../students-fake-api'
 
-/* 📝 Создайте fetchStudentsTC и завершите работу над studentSlice */
+/* 📝 Создайте fetchStudentsTC и завершите работу над studentsSlice */
 
 export const studentsSlice = createSlice({
   name: 'students',
