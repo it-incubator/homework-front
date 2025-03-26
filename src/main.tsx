@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './color-tokens.css'
@@ -8,9 +7,7 @@ import { store } from '@/app/store.ts'
 import { App } from '@/app/App.tsx'
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </StrictMode>
+  <Provider store={store}>
+    <App />
+  </Provider>
 )

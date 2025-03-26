@@ -5,6 +5,7 @@ import { THEME_KEY } from '@/widgets/theme-switcher/ThemeSwitcher'
 import { studentsSlice } from '@/homeworks/sprint-4/hw-13/model/students-slice'
 import { animeSlice } from '@/homeworks/sprint-4/hw-14/model/anime-slice'
 import { wizardWorldSlice } from '@/homeworks/sprint-4/hw-16/model/wizard-world-slice'
+import { usersSlice } from '@/homeworks/sprint-5/hw-17/model/users-slice'
 
 const rootReducer = combineReducers({
   habits: habitsReducer,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   [studentsSlice.name]: studentsSlice.reducer,
   [animeSlice.name]: animeSlice.reducer,
   [wizardWorldSlice.name]: wizardWorldSlice.reducer,
+  [usersSlice.name]: usersSlice.reducer,
 })
 
 export const store = configureStore({
