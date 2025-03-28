@@ -2,7 +2,7 @@ import axios from 'axios'
 import { GetUsersParams, GetUsersResponse } from './exams.types'
 
 const instance = axios.create({
-  baseURL: 'https://exams-frontend.kimitsu.it-incubator.io/api',
+  baseURL: import.meta.env.VITE_BASE_EXAMS_API,
 })
 
 export const examsApi = {

@@ -1,5 +1,5 @@
 import { createAppSlice } from '@/shared/utils/createAppSlice'
-import { GetUsersParams, User, examsApi } from '../../api/'
+import { GetUsersParams, User, examsApi } from '@/homeworks/sprint-5/hw-17/api/'
 
 export const usersSlice = createAppSlice({
   name: 'users',

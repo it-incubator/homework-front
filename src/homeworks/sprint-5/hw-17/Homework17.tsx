@@ -46,13 +46,12 @@ export const Homework17 = () => {
 
   return (
     <section id={'hw17'}>
-      <h3>Homework 17</h3>
+      <h3>Homework 17 - Debounce</h3>
       <TextField id="hw17-input" label="Поиск по имени" value={name} onChange={(e) => setName(e.target.value)} />
       <ul id="hw17-users">
         {users.map((user, index) => (
           <li key={user.id}>
             <span>{user.name}</span>
-            <span>{user.age}</span>
           </li>
         ))}
       </ul>
@@ -65,7 +64,6 @@ export function useDebounce<T>(value: T, delay: number = DEBOUNCE_DELAY): T {
   const [debouncedValue, setDebouncedValue] = useState<T>(value)
 
   // 📝 Завершите реализацию
-  
 
   return debouncedValue
 }

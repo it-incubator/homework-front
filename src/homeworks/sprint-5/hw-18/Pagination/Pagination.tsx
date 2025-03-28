@@ -1,0 +1,64 @@
+import s from './Pagination.module.css'
+
+type PaginationProps = {
+  totalCount: number
+  pageSize: number
+  currentPage: number
+  handlePageChange: (page: number) => void
+  handlePageSizeChange: (pageSize: number) => void
+}
+
+export const Pagination = ({
+  totalCount,
+  pageSize,
+  currentPage,
+  handlePageChange,
+  handlePageSizeChange,
+}: PaginationProps) => {
+  // 📝 добавьте динамический расчет totalPages
+  const totalPages = 5
+
+  return (
+    <div className={s.pagination}>
+      <button
+        id={'hw18-pagination-prev'}
+        onClick={() => handlePageChange(currentPage - 1)}
+        // 📝 кнопка должна быть disabled на первой странице
+        className={s.button}>
+        Prev
+      </button>
+
+      {new Array(totalPages).fill(null).map((_, index) => {
+        const page = index + 1
+
+        return (
+          <button
+            id={`hw18-pagination-button-${page}`}
+            key={page}
+            onClick={() => handlePageChange(page)}
+            className={`${s.button} ${currentPage === page ? s.buttonActive : ''}`}>
+            {page}
+          </button>
+        )
+      })}
+
+      <button
+        id={'hw18-pagination-next'}
+        onClick={() => handlePageChange(currentPage + 1)}
+        // 📝 кнопка должна быть disabled на последней странице
+        className={s.button}>
+        Next
+      </button>
+
+      <select
+        id={'hw18-pagination-select'}
+        value={pageSize}
+        onChange={(e) => handlePageSizeChange(Number(e.target.value))}
+        className={s.select}>
+        <option value={5}>5 per page</option>
+        <option value={10}>10 per page</option>
+        <option value={20}>20 per page</option>
+      </select>
+    </div>
+  )
+}
