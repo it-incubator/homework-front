@@ -28,19 +28,21 @@ export const Pagination = ({
         Prev
       </button>
 
-      {new Array(totalPages).fill(null).map((_, index) => {
-        const page = index + 1
+      {Array(totalPages)
+        .fill(null)
+        .map((_, index) => {
+          const page = index + 1
 
-        return (
-          <button
-            id={`hw18-pagination-button-${page}`}
-            key={page}
-            onClick={() => handlePageChange(page)}
-            className={`${s.button} ${currentPage === page ? s.buttonActive : ''}`}>
-            {page}
-          </button>
-        )
-      })}
+          return (
+            <button
+              id={`hw18-pagination-button-${page}`}
+              key={page}
+              onClick={() => handlePageChange(page)}
+              className={`${s.button} ${currentPage === page ? s.buttonActive : ''}`}>
+              {page}
+            </button>
+          )
+        })}
 
       <button
         id={'hw18-pagination-next'}
