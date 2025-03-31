@@ -22,6 +22,7 @@ export const NewHabitForm = () => {
   return (
     <form className={s.form} onSubmit={handleAddHabit}>
       <TextField
+        id="hw9-new-habit-input"
         label="Ваша новая привычка"
         className={s.input}
         value={newHabitTitle}
