@@ -1,4 +1,3 @@
-import React from 'react'
 import s from './UserMessage.module.css'
 
 // 📝 создать правильный тип вместо any
@@ -17,15 +16,15 @@ export const UserMessage = (props: UserMessageProps) => {
         />
         <div className={s.text}>
           <div id={'hw5-name-' + props.message.id} className={s.name}>
-            {/*создаёт студент*/}
+            {/* 📝 имя пользователя */}
           </div>
           <pre id={'hw5-text-' + props.message.id} className={s.messageText}>
-            {/*создаёт студент*/}
+            {/* 📝 текст сообщения */}
           </pre>
         </div>
       </div>
       <div id={'hw5-time-' + props.message.id} className={s.time}>
-        {/*создаёт студент*/}
+        {/* 📝 время*/}
       </div>
     </div>
   )

@@ -10,19 +10,19 @@ export const FriendMessage = (props: any) => {
           width="200"
           alt="avatar"
           id={'hw5-friend-avatar-' + props.message.id}
-          // создаёт студент
+          // 📝 src
         />
         <div className={s.friendText}>
           <div id={'hw5-friend-name-' + props.message.id} className={s.friendName}>
-            {/*создаёт студент*/}
+            {/* 📝 имя пользователя */}
           </div>
           <pre id={'hw5-friend-text-' + props.message.id} className={s.friendMessageText}>
-            {/*создаёт студент*/}
+            {/* 📝 текст сообщения */}
           </pre>
         </div>
       </div>
       <div id={'hw5-friend-time-' + props.message.id} className={s.friendTime}>
-        {/*создаёт студент*/}
+        {/* 📝 время*/}
       </div>
     </div>
   )
