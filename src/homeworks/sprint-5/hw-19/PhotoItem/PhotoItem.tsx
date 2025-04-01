@@ -9,8 +9,6 @@ export const PhotoItem = ({ photo }: PhotoItemProps) => {
   const [isEditing, setIsEditing] = useState(false)
   const [newTitle, setNewTitle] = useState(photo.title)
 
-  //const [updatePhoto] = useUpdatePhotoMutation()
-
   const handleSave = async () => {
     if (newTitle.trim()) {
       console.log('newTitle', newTitle)

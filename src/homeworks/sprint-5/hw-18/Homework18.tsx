@@ -9,7 +9,7 @@ import { Pagination } from './Pagination/Pagination'
  * Компонент Pagination почти закончен.
  * 1. Передайте в компонент Pagination необходимые пропсы.
  * - Размер страницы по умолчанию - 5, номер страницы по умолчанию - 1
- * - State для пагинации может хранится в URL, в локальном стейте или в Redux.
+ * - State для пагинации может храниться в URL, в локальном стейте или в Redux.
  * - При изменении размера страницы (pageSize) нужно сбрасывать номер страницы на 1
  *
  * 2. Завершите реализацию компонента Pagination
@@ -49,7 +49,7 @@ export const Homework18 = () => {
 
       {data && (
         <Pagination
-          currentPage={1}
+          pageNumber={1}
           totalCount={data.totalCount}
           pageSize={5}
           handlePageChange={() => {}}

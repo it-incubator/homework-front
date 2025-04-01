@@ -2,7 +2,6 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 16px;
-  background: #fff;
   overflow: hidden;
 }
 
@@ -14,11 +13,9 @@
 }
 
 .table th {
-  background-color: #f4f4f4;
   font-weight: bold;
 }
 
 .table tbody tr:hover {
-  background-color: #f9f9f9;
+  background-color: var(--bg-color-hover);
 }
-

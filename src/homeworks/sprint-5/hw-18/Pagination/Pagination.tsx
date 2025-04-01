@@ -3,7 +3,7 @@ import s from './Pagination.module.css'
 type PaginationProps = {
   totalCount: number
   pageSize: number
-  currentPage: number
+  pageNumber: number
   handlePageChange: (page: number) => void
   handlePageSizeChange: (pageSize: number) => void
 }
@@ -11,7 +11,7 @@ type PaginationProps = {
 export const Pagination = ({
   totalCount,
   pageSize,
-  currentPage,
+  pageNumber,
   handlePageChange,
   handlePageSizeChange,
 }: PaginationProps) => {
@@ -22,7 +22,7 @@ export const Pagination = ({
     <div className={s.pagination}>
       <button
         id={'hw18-pagination-prev'}
-        onClick={() => handlePageChange(currentPage - 1)}
+        onClick={() => handlePageChange(pageNumber - 1)}
         // 📝 кнопка должна быть disabled на первой странице
         className={s.button}>
         Prev
@@ -38,7 +38,7 @@ export const Pagination = ({
               id={`hw18-pagination-button-${page}`}
               key={page}
               onClick={() => handlePageChange(page)}
-              className={`${s.button} ${currentPage === page ? s.buttonActive : ''}`}>
+              className={`${s.button} ${pageNumber === page ? s.buttonActive : ''}`}>
               {page}
             </button>
           )
@@ -46,7 +46,7 @@ export const Pagination = ({
 
       <button
         id={'hw18-pagination-next'}
-        onClick={() => handlePageChange(currentPage + 1)}
+        onClick={() => handlePageChange(pageNumber + 1)}
         // 📝 кнопка должна быть disabled на последней странице
         className={s.button}>
         Next
