@@ -49,7 +49,7 @@ export const Homework14 = () => {
 
   return (
     <section id="hw14">
-      <h3>Homework 14 - Search Params ^_^</h3>
+      <h3>Homework 14 - Search Params</h3>
       <div className={s.container}>
         <div className={s.filters}>
           <TextField
@@ -62,7 +62,7 @@ export const Homework14 = () => {
           />
           <label>
             <input id="hw14-favorite-checkbox" type="checkbox" checked={isFavorite} onChange={handleFavoriteChange} />
-            Только любимое аниме
+            Только любимое аниме ^_^
           </label>
         </div>
         <div className={s.grid}>

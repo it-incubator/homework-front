@@ -48,7 +48,6 @@ export type StudentFilterParams = {
 
 const filterStudents = (students: Student[], { startDate, endDate }: StudentFilterParams) => {
   // Если не переданы даты, то возвращаем всех студентов
-
   if (!startDate && !endDate) {
     return students
   }

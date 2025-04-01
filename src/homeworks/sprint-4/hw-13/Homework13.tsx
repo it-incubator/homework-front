@@ -13,7 +13,7 @@ import { ru } from 'date-fns/locale/ru'
  * (фильтр принимает диапазон дат).
  *
  * 1. Получите список студентов с фейкового "сервера" при помощи studentsApi.getStudents() и отобразите данные в компоненте StudentsTable.
- * - для этого используйте Redux Toolkit - students-slice.ts уже создан в папке model
+ * - для этого используйте Redux Toolkit - students-slice.ts уже создан в папке model. Создайте fetchStudentsTC для получения списка студентов
  * 2. Добавьте фильтрацию по дате регистрации студента. Мы должны иметь возможность выбрать диапазон дат с помощью двух DatePicker'ов.
  * - Передайте выбранные даты в studentsApi.getStudents() через fetchStudentsTC.
  * - Допустимо передавать только startDate или endDate, оба параметра или не передавать ничего.
