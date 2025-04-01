@@ -36,7 +36,7 @@ export const Homework6 = () => {
   }
 
   // 📝 Напишите логику фильтрации книг
-  const filteredBooks = []
+  const filteredBooks: Book[] = []
 
   return (
     <section id={'hw6'}>
