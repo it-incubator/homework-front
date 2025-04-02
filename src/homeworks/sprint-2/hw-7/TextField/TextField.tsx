@@ -23,8 +23,11 @@ export const TextField = ({ className, errorMessage, id, label, ...rest }: TextF
         </label>
       )}
 
-      {/* используем библиотеку clsx для комбинации классов, иначе можно было бы написать:
-         className={s.input + ' ' + (showError ? s.error : '')} */}
+      {/*
+       * clsx позволяет удобно комбинировать CSS-классы.
+       * Пример: clsx(s.input, showError && s.error)
+       * Всегда добавит s.input, а s.error — только если showError === true.
+       */}
       <input className={clsx(s.input, showError && s.error)} id={inputId} type={'text'} {...rest} />
 
       {showError && <p className={s.error}>{errorMessage}</p>}

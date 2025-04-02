@@ -10,6 +10,11 @@ type CardProps = {
 
 export const Card = ({ headerContent, footerContent, children, className, ...props }: CardProps) => {
   return (
+    /*
+     * clsx объединяет классы компонента:
+     * всегда добавляется s.box,
+     * а также className, если его передали через пропсы
+     */
     <div className={clsx(s.box, className)} {...props}>
       {headerContent && <header>{headerContent}</header>}
       {children}

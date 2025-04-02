@@ -1,8 +1,8 @@
 type UserListProps = {
-  // 📝 add type definition
+  // 📝 допишите типизацию
 }
 
-// 📝 remove any
+// 📝 удалите any
 export const UserList = (props: any) => {
   return (
     <div id={'hw01-users'}>

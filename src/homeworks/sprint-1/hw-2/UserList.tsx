@@ -1,6 +1,6 @@
 type UserListProps = {
-  users: any // 📝 add typing
-  filterLosAngelesUsers: any // 📝 add typing
+  users: any // 📝 добавьте типизацию
+  filterLosAngelesUsers: any // 📝 добавьте типизацию
 }
 
 export const UserList = (props: UserListProps) => {
@@ -8,12 +8,12 @@ export const UserList = (props: UserListProps) => {
     <div id={'hw02-users'}>
       <button
         id={'hw02-filter-button'}
-        // 📝 add onClick
+        // 📝 onClick
       >
         Show me only users from Los Angeles 🌴
       </button>
 
-      <ul>{/* 📝 отрендери список пользователей. В этот раз используй компонент UserItem */}</ul>
+      <ul>{/* 📝 отрендерите список пользователей. В этот раз используйте компонент UserItem */}</ul>
     </div>
   )
 }

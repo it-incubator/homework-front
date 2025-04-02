@@ -11,7 +11,7 @@ type BookListProps = {
 export const BookList = (props: BookListProps) => {
   return (
     <ul className={s.list}>
-      {/* 📝 remove any */}
+      {/* 📝 замените any */}
       {props.books.map((book: any) => (
         <li id={`hw6-book-item-${book.id}`} key={book.id} className={s.item}>
           <span>{getGenreEmoji(book.genre)}</span>

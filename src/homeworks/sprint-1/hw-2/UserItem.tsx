@@ -1,8 +1,8 @@
 type UserItemProps = {
-  // 📝 add type definition
+  // 📝 допишите типизацию
 }
 
-// 📝 remove any
+// 📝 удалите any
 export const UserItem = (props: any) => {
   return (
     <li key={props.user.id} id={`hw02-user-${props.user.id}`}>

@@ -46,9 +46,9 @@ export const Homework2 = () => {
   const [users, setUsers] = useState(USERS)
 
   const filterLosAngelesUsers = () => {
-    // 📝 Add filtration logic here
-    // Only users from Los Angeles should be displayed
-    // 🧙‍♂️ Hint: use the setUsers to update the list of users
+    // 📝 Добавьте логику фильтрации
+    // Должны отображаться только пользователи из Лос-Анджелеса
+    // 🧙‍♂️ Подсказка: используйте setUsers для обновления списка пользователей
   }
 
   return (

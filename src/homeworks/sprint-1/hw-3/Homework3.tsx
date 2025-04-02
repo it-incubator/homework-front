@@ -15,12 +15,12 @@ export const Homework3 = () => {
   const [texts, setTexts] = useState<string[]>(['Прочитать раздел документации React "Describing the UI" на react.dev'])
 
   const handleChange = () => {
-    // 📝 add logic here
+    // 📝 напишите логику
   }
 
   const handleSave = () => {
-    // 📝 add new task to the texts
-    // 📝 and clear the currentText
+    // 📝 добавьте новое дело (currentText) в список дел (texts)
+    // 📝 и очистите currentText
   }
 
   return (
@@ -29,7 +29,7 @@ export const Homework3 = () => {
       {currentText ? (
         <p id={'hw03-text'}>{currentText}</p>
       ) : (
-        <p id={'hw03-default-text'}>Здесь появится новое дело</p> // nothing to change here
+        <p id={'hw03-default-text'}>Здесь появится новое дело</p>
       )}
       <input id={'hw03-input'} type="text" value={currentText} onChange={handleChange} />
       <button id={'hw03-button'}>Сохранить</button>

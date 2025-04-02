@@ -24,7 +24,7 @@ export const UserMessage = (props: UserMessageProps) => {
         </div>
       </div>
       <div id={'hw5-time-' + props.message.id} className={s.time}>
-        {/* 📝 время*/}
+        {/* 📝 время */}
       </div>
     </div>
   )

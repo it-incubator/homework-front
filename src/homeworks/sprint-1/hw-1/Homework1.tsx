@@ -25,18 +25,18 @@ const USERS: any[] = [
 ]
 
 type User = {
-  // 📝 add type definition
+  // 📝 допишите типизацию
 }
 
 type Address = {
-  // 📝 add type definition
+  // 📝 допишите типизацию
 }
 
 export const Homework1 = () => {
   return (
     <section id={'hw01'}>
       <h3>Homework 1</h3>
-      {/* 📝 render UserList component */}
+      {/* 📝 отрендерить компонент UserList */}
     </section>
   )
 }
